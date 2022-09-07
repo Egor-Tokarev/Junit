@@ -1,6 +1,16 @@
-Учебный пример использования аннотаций 
+Пример использования аннотаций: 
 
-@ParameterizedTest
-@CsvSource
-@DisplayName
-@Disabled
+@DisplayName // отображаемое имя
+
+@Disabled // откл тест
+
+@ValueSource // несколько значений из массива 
+
+@CsvSource // несколько значений, пара из поиска и результата
+
+
+@MethodSource // Для работы со стримом 
+
+@EnumSource // Переключение 
+
+@ParameterizedTest // Параметризированный тест
