@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.WebTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-09-07T16:17:59" hostname="e-tokorev" time="6.658">
+  <properties/>
+  <testcase name="Результаты поиска содержат текст это фреймворк для автоматизированного тестирования веб-приложений для запроса Selenide" classname="org.example.WebTest" time="5.2"/>
+  <testcase name="Результаты поиска содержат текст -framework успешно применяется в работе автоматизатора для запроса Allure java" classname="org.example.WebTest" time="1.457"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 61481
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+сент. 07, 2022 7:18:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+сент. 07, 2022 7:18:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 104
+]]></system-err>
+</testsuite>
