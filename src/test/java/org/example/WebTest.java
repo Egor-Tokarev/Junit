@@ -58,7 +58,7 @@ public class WebTest {
     }
 
     @MethodSource("dataProviderForSelenideSiteMenuTest")
-    @ParameterizedTest(name = "Для локали {0} отображаются кнопки {1}")
+    @ParameterizedTest(name = "Для локали {0} отображаются ссылки {1}")
     void selenideSiteMenuTest(Lang lang, List<String> expectedButtons) {
         open("https://vk.com/");
         $$(".footer_lang a").find(text(lang.name())).click();

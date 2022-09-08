@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.WebTest" tests="3" skipped="0" failures="2" errors="0" timestamp="2022-09-08T11:50:11" hostname="e-tokorev" time="16.63">
+<testsuite name="org.example.WebTest" tests="3" skipped="0" failures="2" errors="0" timestamp="2022-09-08T12:01:32" hostname="e-tokorev" time="14.668">
   <properties/>
-  <testcase name="Для локали ENG отображаются кнопки [About VK, Terms, Developers]" classname="org.example.WebTest" time="6.117"/>
-  <testcase name="Для локали UA отображаются кнопки [Про VK, Правила, Для бізнесу, Розробникам]" classname="org.example.WebTest" time="5.308">
-    <failure message="Texts size mismatch&#10;Actual: [About VK, Terms, Developers], List size: 3&#10;Expected: [Про VK, Правила, Для бізнесу, Розробникам], List size: 4&#10;Collection: .footer_links a.filter(visible)&#10;Screenshot: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662637822960.0.png&#10;Page source: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662637822960.0.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.TextsSizeMismatch">Texts size mismatch
+  <testcase name="Для локали ENG отображаются кнопки [About VK, Terms, Developers]" classname="org.example.WebTest" time="5.12"/>
+  <testcase name="Для локали UA отображаются кнопки [Про VK, Правила, Для бізнесу, Розробникам]" classname="org.example.WebTest" time="5.135">
+    <failure message="Texts size mismatch&#10;Actual: [About VK, Terms, Developers], List size: 3&#10;Expected: [Про VK, Правила, Для бізнесу, Розробникам], List size: 4&#10;Collection: .footer_links a.filter(visible)&#10;Screenshot: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662638502173.0.png&#10;Page source: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662638502173.0.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.TextsSizeMismatch">Texts size mismatch
 Actual: [About VK, Terms, Developers], List size: 3
 Expected: [Про VK, Правила, Для бізнесу, Розробникам], List size: 4
 Collection: .footer_links a.filter(visible)
-Screenshot: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662637822960.0.png
-Page source: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662637822960.0.html
+Screenshot: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662638502173.0.png
+Page source: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662638502173.0.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.collections.ExactTexts.fail(ExactTexts.java:63)
 	at app//com.codeborne.selenide.ElementsCollection.waitUntil(ElementsCollection.java:198)
@@ -156,13 +156,12 @@ Timeout: 4 s.
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Для локали RU отображаются кнопки [О ВКонтакте, Правила, Для бизнеса, Разработчикам]" classname="org.example.WebTest" time="5.203">
-    <failure message="Element not found {.footer_lang a.findBy(text &quot;RU&quot;)}&#10;Expected: interactable&#10;Screenshot: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662637827699.1.png&#10;Page source: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662637827699.1.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: Cannot locate an element .footer_lang a.findBy(text &quot;RU&quot;)" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.footer_lang a.findBy(text &quot;RU&quot;)}
+  <testcase name="Для локали RU отображаются кнопки [О ВКонтакте, Правила, Для бизнеса, Разработчикам]" classname="org.example.WebTest" time="4.411">
+    <failure message="Element not found {.footer_lang a.findBy(text &quot;RU&quot;)}&#10;Expected: interactable&#10;Page source: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662638506961.1.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchWindowException: no such window: target window already closed" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.footer_lang a.findBy(text &quot;RU&quot;)}
 Expected: interactable
-Screenshot: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662637827699.1.png
-Page source: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662637827699.1.html
+Page source: file:/Users/e.tokorev/IdeaProjects/Junit_first/build/reports/tests/1662638506961.1.html
 Timeout: 4 s.
-Caused by: NoSuchElementException: Cannot locate an element .footer_lang a.findBy(text &quot;RU&quot;)
+Caused by: NoSuchWindowException: no such window: target window already closed
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:87)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:129)
 	at app//com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:147)
@@ -313,12 +312,34 @@ Caused by: NoSuchElementException: Cannot locate an element .footer_lang a.findB
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element .footer_lang a.findBy(text &quot;RU&quot;)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.102)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'e-tokorev', ip: 'fe80:0:0:0:18b2:bd11:7476:161d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.2', java.version: '11.0.15'
-Driver info: driver.version: unknown
-	at app//com.codeborne.selenide.impl.CollectionElementByCondition.getWebElement(CollectionElementByCondition.java:55)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d4accaafa371cbd39c66bc9dba749c0b, findElements {using=css selector, value=.footer_lang a}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/1g/t6zp4v0d1zn...}, goog:chromeOptions: {debuggerAddress: localhost:55319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55319/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d4accaafa371cbd39c66bc9dba749c0b
+	at java.base@11.0.15/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@11.0.15/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base@11.0.15/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@11.0.15/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+	at app//org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:372)
+	at app//com.codeborne.selenide.impl.WebElementSelector.findElements(WebElementSelector.java:76)
+	at app//com.codeborne.selenide.impl.WebElementSelector.findElements(WebElementSelector.java:61)
+	at app//com.codeborne.selenide.impl.BySelectorCollection.getElements(BySelectorCollection.java:40)
+	at app//com.codeborne.selenide.impl.CollectionElementByCondition.getWebElement(CollectionElementByCondition.java:47)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:110)
 	... 148 more
 </failure>
@@ -327,15 +348,15 @@ Driver info: driver.version: unknown
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 56076
+Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 59763
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-сент. 08, 2022 2:50:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+сент. 08, 2022 3:01:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-сент. 08, 2022 2:50:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+сент. 08, 2022 3:01:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 105, so returning the closest version found: 104
-сент. 08, 2022 2:50:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+сент. 08, 2022 3:01:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 105 of 104
 ]]></system-err>
 </testsuite>
