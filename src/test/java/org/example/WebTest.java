@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class WebTest {
-
+/*
     @BeforeAll
     static void configure() {
         Configuration.holdBrowserOpen = true;
@@ -47,13 +47,13 @@ public class WebTest {
         $$("li.repo-list-item").first().shouldHave(text(expectedResult));
 
 
-    }
+    }*/
 
     static Stream<Arguments> dataProviderForSelenideSiteMenuTest() {
         return Stream.of(
-                Arguments.of(Lang.English, List.of("About VK", "Terms", "Developers")),
-                Arguments.of(Lang.Русский, List.of("О ВКонтакте", "Правила", "Для бизнеса", "Разработчикам")),
-                Arguments.of(Lang.Українська, List.of("Про VK", "Правила", "Для бізнесу", "Розробникам"))
+                Arguments.of(Lang.ENG, List.of("About VK", "Terms", "Developers")),
+                Arguments.of(Lang.UA, List.of("Про VK", "Правила", "Для бізнесу", "Розробникам")),
+                Arguments.of(Lang.RU, List.of("О ВКонтакте", "Правила", "Для бизнеса", "Разработчикам"))
         );
     }
 
@@ -67,7 +67,7 @@ public class WebTest {
                 .shouldHave(CollectionCondition.texts(expectedButtons));
 
     }
-
+/*
     @EnumSource(Lang.class)
     @ParameterizedTest
     void vkEnumTest(Lang lang) {
@@ -78,6 +78,6 @@ public class WebTest {
         $(".login_mobile_info").shouldBe(visible); // Аннотация видна
         $(".LoginMobilePromo__devices").shouldBe(visible); // Див с картинками телефонов виден
 
-    }
+    }*/
 }
 
