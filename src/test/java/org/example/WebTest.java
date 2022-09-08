@@ -1,9 +1,6 @@
 package org.example;
 
 import com.codeborne.selenide.CollectionCondition;
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
 
@@ -11,7 +8,6 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 
@@ -59,25 +55,23 @@ public class WebTest {
 
     @MethodSource("dataProviderForSelenideSiteMenuTest")
     @ParameterizedTest(name = "Для локали {0} отображаются ссылки {1}")
-    void selenideSiteMenuTest(Lang lang, List<String> expectedButtons) {
+    void selenideSiteMenuTest(String lang, List<String> expectedButtons) {
         open("https://vk.com/");
-        $$(".footer_lang a").find(text(lang.name())).click();
+        $$(".footer_lang a").find(text(lang)).click();
         $$(".footer_links a")
                 .filter(visible)
                 .shouldHave(CollectionCondition.texts(expectedButtons));
-
     }
-/*
+
     @EnumSource(Lang.class)
     @ParameterizedTest
-    void vkEnumTest(Lang lang) {
+    void vkEnumTest(String lang) {
         open("https://vk.com/");
-        $$(".footer_lang a").find(text(lang.name())).click();
+        $$(".footer_lang a").find(text(lang)).click();
         $("#index_login").shouldBe(visible);
         $(".login_mobile_header").shouldBe(visible); // Хедер виден
         $(".login_mobile_info").shouldBe(visible); // Аннотация видна
         $(".LoginMobilePromo__devices").shouldBe(visible); // Див с картинками телефонов виден
 
-    }*/
+    }
 }
-
