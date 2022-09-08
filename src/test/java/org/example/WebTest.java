@@ -46,6 +46,7 @@ public class WebTest {
         $("[placeholder=\"Search GitHub\"]").setValue(testData).pressEnter();
         $$("li.repo-list-item").first().shouldHave(text(expectedResult));
 
+
     }
 
     static Stream<Arguments> dataProviderForSelenideSiteMenuTest() {
