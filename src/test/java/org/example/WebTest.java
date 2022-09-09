@@ -65,13 +65,21 @@ public class WebTest {
 
     @EnumSource(Lang.class)
     @ParameterizedTest
-    void vkEnumTest(String lang) {
+    void vkEnumTest(Lang lang) {
         open("https://vk.com/");
-        $$(".footer_lang a").find(text(lang)).click();
+        $$(".footer_lang a").find(text(lang.getDesc())).click();
         $("#index_login").shouldBe(visible);
         $(".login_mobile_header").shouldBe(visible); // Хедер виден
         $(".login_mobile_info").shouldBe(visible); // Аннотация видна
         $(".LoginMobilePromo__devices").shouldBe(visible); // Див с картинками телефонов виден
-
     }
+
+   /* void vkEnumTest(Lang lang) { // работает один из 2 vkEnumTest, одновременно не запускается
+        open("https://vk.com/");
+        $$(".footer_lang a").find(text(lang.getDesc())).click();
+        $("#index_login").shouldBe(visible);
+        $(".login_mobile_header").shouldBe(visible);
+        $(".login_mobile_info").shouldBe(visible);
+        $(".LoginMobilePromo__devices").shouldBe(visible);
+    }*/
 }
