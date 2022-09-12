@@ -1,6 +1,9 @@
 package org.example;
 
 import com.codeborne.selenide.CollectionCondition;
+import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
 
@@ -12,7 +15,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class WebTest {
-/*
+
     @BeforeAll
     static void configure() {
         Configuration.holdBrowserOpen = true;
@@ -43,7 +46,7 @@ public class WebTest {
         $$("li.repo-list-item").first().shouldHave(text(expectedResult));
 
 
-    }*/
+    }
 
     static Stream<Arguments> dataProviderForSelenideSiteMenuTest() {
         return Stream.of(
