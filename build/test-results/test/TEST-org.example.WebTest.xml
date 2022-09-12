@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.WebTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-09-09T15:24:28" hostname="e-tokorev" time="8.497">
+<testsuite name="org.example.WebTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-09-12T12:29:25" hostname="e-tokorev" time="10.044">
   <properties/>
-  <testcase name="[1] ENG" classname="org.example.WebTest" time="6.516"/>
-  <testcase name="[2] RU" classname="org.example.WebTest" time="1.318"/>
-  <testcase name="[3] UA" classname="org.example.WebTest" time="0.661"/>
+  <testcase name="[1] ENG" classname="org.example.WebTest" time="8.482"/>
+  <testcase name="[2] RU" classname="org.example.WebTest" time="1.01"/>
+  <testcase name="[3] UA" classname="org.example.WebTest" time="0.549"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 51848
+Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 62650
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-сент. 09, 2022 6:24:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+сент. 12, 2022 3:29:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-сент. 09, 2022 6:24:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+сент. 12, 2022 3:29:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 105, so returning the closest version found: 104
-сент. 09, 2022 6:24:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+сент. 12, 2022 3:29:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 105 of 104
 ]]></system-err>
 </testsuite>
